@@ -3,9 +3,11 @@
   <head>
     <title>MyNewApp</title>
     <%= csrf_meta_tags %>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
@@ -18,8 +20,11 @@
   	</nav>
 
     <%= yield %>
-  	<footer>
-  		&copy; 2015 Bike Berlin
+   
+  	<footer class="footer">
+      <div class="container">
+    		<p class="footer-text">&copy; 2015 Bike Berlin</p>
+      </div>
   	</footer>
   </body>
 </html>
